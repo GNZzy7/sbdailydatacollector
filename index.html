@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Collect Social Blade Daily Data Quickly!"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Social Blade Daily Data Collector" />
+    <meta
+      name="twitter:description"
+      content="Collect Social Blade Daily Data Quickly!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://api.microlink.io/?url=https://sbdailydatacollector.vercel.app/&screenshot=true&embed=screenshot.url&overlay.browser=dark"
+    />
+    <meta property="og:title" content="Social Blade Daily Data Collector" />
+    <meta
+      property="og:description"
+      content="Collect Social Blade Daily Data Quickly!"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sbdailydatacollector.vercel.app" />
+    <meta
+      property="og:image"
+      content="https://api.microlink.io/?url=https://sbdailydatacollector.vercel.app/&screenshot=true&embed=screenshot.url&overlay.browser=dark"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <title>Social Blade Daily Data Collector</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1
+      style="
+        font-size: 2.5em;
+        font-family: Roboto;
+        font-weight: 900;
+        text-align: center;
+      "
+    >
+      Social Blade Daily Data Collector
+    </h1>
+    <a href="https://youtu.be/LihUTkSMRFw">
+      <p style="font-size: 3em">Watch tutorial</p>
+    </a>
+    <input
+      type="text"
+      name="rawDataInput"
+      id="rawDataInput"
+      value=""
+      style="margin-top: 0px; margin-bottom: 50px"
+    />
+    <button type="submit" onclick="addify()">Submit</button>
+    <div id="buttons"></div>
+    <div style="margin-top: 50px">
+      <label style="font-size: 45px; color: yellow">Options</label>
+      <br />
+      <input type="radio" name="hon-vir-data" id="hon" />
+      <label for="hon" style="font-size: 20px">Printed data horizontally</label>
+      <br />
+      <input type="radio" name="hon-vir-data" id="vir" checked="true" />
+      <label for="vir" style="font-size: 20px">Printed data vertically </label>
+    </div>
+    <br />
+    <label style="font-size: 45px; color: white">Preview</label>
+    <div id="exData" style="font-family: 'Open Sans'"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
